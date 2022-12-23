@@ -28,11 +28,14 @@ public class Lecture1_Scanner { //class header, public - Java keyword access spe
         Scanner sc = new Scanner(System.in); //System.in is Java Object; sc is a class type variable; datatype of sc is Scanner
         //new creates an object in memory
         int number = sc.nextInt();
-        if (number > 0) {
+
+        System.out.println((number > 0) ? "You inputted a positive number" : "You inputted a negative number" );
+
+        /*if (number > 0) {
             System.out.println("You inputted a positive number");
         } else if (number < 0) {
             System.out.println("You inputted a negative number");
-        }
+        }*/
     }
 
     /*
