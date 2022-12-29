@@ -3,32 +3,34 @@ package TedsLectures;
 
 import java.util.Scanner;
 
-public class Lecture2_Calculator_Variations {
+public class Lecture2_Calculator_Variation_2 {
     public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("Input the first number:");
-
-
-        int number1 = new Scanner(System.in).nextInt();//Instead of lines: 90, 93
+        int number1 = sc.nextInt();
 
         System.out.println("Input the second number:");
-        int number2 = new Scanner(System.in).nextInt();
+        int number2 = sc.nextInt();
 
-        System.out.println("Select multiply, divide, subtract or add:");
-        String action = new Scanner(System.in).nextLine();
+        System.out.println("Select 1 for multiply, 2 for divide, 3 for subtract or 4 for add:");
+        /*String action = new Scanner(System.in).nextLine();*/
+        int action = sc.nextInt();
 
-        if(action.equals("multiply")){
+        if(action == 1){
             int result = multiply(number1,number2);
             System.out.println("Answer is " + result);
         }
-        if(action.equals("divide")){
+        if(action == 2){
             int result = divide(number1, number2);
             System.out.println("Answer is " + result);
         }
-        if(action.equals("subtract")){
+        if(action == 3){
             int result = subtract(number1,number2);
             System.out.println("Answer is " + result);
         }
-        if(action.equals("add")){
+        if(action == 4){
             int result = add(number1,number2);
             System.out.println("Answer is " + result);
         }
